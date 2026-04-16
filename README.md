@@ -6,7 +6,8 @@ plz enter your name if you can access to this
 Team member:
 Weixuan Gu,
 Sanya Kapoor,
-Disen Zhu
+Disen Zhu,
+Chris Luckhurst
 
 
 
