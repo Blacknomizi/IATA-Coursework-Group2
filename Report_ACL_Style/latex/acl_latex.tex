@@ -2,7 +2,7 @@
 
 % Change "review" to "final" to generate the final (sometimes called camera-ready) version.
 % Change to "preprint" to generate a non-anonymous version with page numbers.
-\usepackage[review]{acl}
+\usepackage{acl}
 
 % Standard package includes
 \usepackage{times}
@@ -37,7 +37,9 @@
 %
 % and set <dim> to something 5cm or larger.
 
-\title{Instructions for *ACL Proceedings}
+\usepackage{placeins}
+
+\title{Introduction to AI and Text Analytics 2025 Group Report}
 
 % Author information can be set in various styles:
 % For several authors from the same institution:
@@ -55,16 +57,10 @@
 %         Author 2 \\ Address line \\ ... \\ Address line \And
 %         Author 3 \\ Address line \\ ... \\ Address line}
 
-\author{First Author \\
-  Affiliation / Address line 1 \\
-  Affiliation / Address line 2 \\
-  Affiliation / Address line 3 \\
-  \texttt{email@domain} \\\And
-  Second Author \\
-  Affiliation / Address line 1 \\
-  Affiliation / Address line 2 \\
-  Affiliation / Address line 3 \\
-  \texttt{email@domain} \\}
+\author{
+Team members (sorted by last name): \\
+Weixuan Gu, Zongjin Han, Saisha Hiray, Sanya Kapoor, Chris Luckhurst, Disen Zhu
+}
 
 %\author{
 %  \textbf{First Author\textsuperscript{1}},
@@ -107,259 +103,126 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-This document is a supplement to the general instructions for *ACL authors. It contains instructions for using the \LaTeX{} style files for ACL conferences.
-The document itself conforms to its own specifications, and is therefore an example of what your manuscript should look like.
-These instructions should be used both for papers submitted for review and for final versions of accepted papers.
+
+
+
 \end{abstract}
 
 \section{Introduction}
 
-These instructions are for authors submitting papers to *ACL conferences using \LaTeX. They are not self-contained. All authors must follow the general instructions for *ACL proceedings,\footnote{\url{http://acl-org.github.io/ACLPUB/formatting.html}} and this document contains additional instructions for the \LaTeX{} style files.
 
-The templates include the \LaTeX{} source of this document (\texttt{acl\_latex.tex}),
-the \LaTeX{} style file used to format it (\texttt{acl.sty}),
-an ACL bibliography style (\texttt{acl\_natbib.bst}),
-an example bibliography (\texttt{custom.bib}),
-and the bibliography for the ACL Anthology (\texttt{anthology.bib}).
 
-\section{Engines}
+\section{Methods}
 
-To produce a PDF file, pdf\LaTeX{} is strongly recommended (over original \LaTeX{} plus dvips+ps2pdf or dvipdf).
-The style file \texttt{acl.sty} can also be used with
-lua\LaTeX{} and
-Xe\LaTeX{}, which are especially suitable for text in non-Latin scripts.
-The file \texttt{acl\_lualatex.tex} in this repository provides
-an example of how to use \texttt{acl.sty} with either
-lua\LaTeX{} or
-Xe\LaTeX{}.
+\subsection{Preliminary Clustering Analysis}
 
-\section{Preamble}
+A preliminary clustering analysis was conducted to assess whether sentence embeddings exhibit natural grouping structures related to participant, intervention, and outcome fields. This stage was exploratory, aiming to evaluate whether such fields are separable in embedding space and whether this structure can inform pipeline design.
 
-The first line of the file must be
-\begin{quote}
-\begin{verbatim}
-\documentclass[11pt]{article}
-\end{verbatim}
-\end{quote}
+\subsubsection{Data Preparation and Label Construction}
 
-To load the style file in the review version:
-\begin{quote}
-\begin{verbatim}
-\usepackage[review]{acl}
-\end{verbatim}
-\end{quote}
-For the final version, omit the \verb|review| option:
-\begin{quote}
-\begin{verbatim}
-\usepackage{acl}
-\end{verbatim}
-\end{quote}
+Token-level annotations from EBM-NLP were converted into flat BIO tags (“O”, “B”, “I”). Tokens were grouped into sentences using punctuation-based segmentation (``.'', ``!'', ``?'') while preserving alignment with annotations.
 
-To use Times Roman, put the following in the preamble:
-\begin{quote}
-\begin{verbatim}
-\usepackage{times}
-\end{verbatim}
-\end{quote}
-(Alternatives like txfonts or newtx are also acceptable.)
+Sentence-level labels were heuristically derived: a sentence was labelled as field-related if it contained a minimum number of positive BIO tokens, otherwise as “other”. This produced three binary datasets (participants, interventions, outcomes vs other). These labels are approximate, as sentences may contain multiple fields.
 
-Please see the \LaTeX{} source of this document for comments on other packages that may be useful.
+\subsubsection{Sentence Embeddings}
 
-Set the title and author using \verb|\title| and \verb|\author|. Within the author list, format multiple authors using \verb|\and| and \verb|\And| and \verb|\AND|; please see the \LaTeX{} source for examples.
+Sentences were encoded using the pretrained sentence-transformer model \texttt{all-MiniLM-L6-v2}~\cite{reimers-2019-sentence-bert} to obtain dense embeddings.
 
-By default, the box containing the title and author names is set to the minimum of 5 cm. If you need more space, include the following in the preamble:
-\begin{quote}
-\begin{verbatim}
-\setlength\titlebox{<dim>}
-\end{verbatim}
-\end{quote}
-where \verb|<dim>| is replaced with a length. Do not set this length smaller than 5 cm.
+\subsubsection{Clustering and Evaluation}
 
-\section{Document Body}
+Two unsupervised methods were applied: K-means (with $k=2$–$5$ for binary tasks and $k=3$ for P/I/O) and hierarchical agglomerative clustering (HAC). Cluster quality was evaluated by comparing cluster assignments with sentence-level labels, using the proportion of field-related sentences within each cluster.
 
-\subsection{Footnotes}
+\subsubsection{Visualisation}
 
-Footnotes are inserted with the \verb|\footnote| command.\footnote{This is a footnote.}
+Embeddings were projected to two dimensions using PCA. For each experiment, embeddings were visualised using two views: coloured by gold labels and by cluster assignments, to assess separability and clustering structure.
 
-\subsection{Tables and figures}
+\subsubsection{Combined P/I/O Analysis}
 
-See Table~\ref{tab:accents} for an example of a table and its caption.
-\textbf{Do not override the default caption sizes.}
+A supplementary P/I/O analysis assigned each sentence to the field with the highest BIO token count, with ties labelled as mixed and empty cases as other. Mixed and other were excluded for three-way clustering, focusing on dominant field assignments. This experiment evaluated whether multiple fields can be jointly recovered from embedding structure.
 
-\begin{table}
-  \centering
-  \begin{tabular}{lc}
-    \hline
-    \textbf{Command} & \textbf{Output} \\
-    \hline
-    \verb|{\"a}|     & {\"a}           \\
-    \verb|{\^e}|     & {\^e}           \\
-    \verb|{\`i}|     & {\`i}           \\
-    \verb|{\.I}|     & {\.I}           \\
-    \verb|{\o}|      & {\o}            \\
-    \verb|{\'u}|     & {\'u}           \\
-    \verb|{\aa}|     & {\aa}           \\\hline
-  \end{tabular}
-  \begin{tabular}{lc}
-    \hline
-    \textbf{Command} & \textbf{Output} \\
-    \hline
-    \verb|{\c c}|    & {\c c}          \\
-    \verb|{\u g}|    & {\u g}          \\
-    \verb|{\l}|      & {\l}            \\
-    \verb|{\~n}|     & {\~n}           \\
-    \verb|{\H o}|    & {\H o}          \\
-    \verb|{\v r}|    & {\v r}          \\
-    \verb|{\ss}|     & {\ss}           \\
-    \hline
-  \end{tabular}
-  \caption{Example commands for accented characters, to be used in, \emph{e.g.}, Bib\TeX{} entries.}
-  \label{tab:accents}
-\end{table}
 
-As much as possible, fonts in figures should conform
-to the document fonts. See Figure~\ref{fig:experiments} for an example of a figure and its caption.
 
-Using the \verb|graphicx| package graphics files can be included within figure
-environment at an appropriate point within the text.
-The \verb|graphicx| package supports various optional arguments to control the
-appearance of the figure.
-You must include it explicitly in the \LaTeX{} preamble (after the
-\verb|\documentclass| declaration and before \verb|\begin{document}|) using
-\verb|\usepackage{graphicx}|.
 
-\begin{figure}[t]
-  \includegraphics[width=\columnwidth]{example-image-golden}
-  \caption{A figure with a caption that runs for more than one line.
-    Example image is usually available through the \texttt{mwe} package
-    without even mentioning it in the preamble.}
-  \label{fig:experiments}
+
+
+
+\section{Experimental Evaluation}
+
+\subsection{Preliminary Clustering Results}
+
+\paragraph{Participants vs Other}
+
+Participant-related clustering showed weak correspondence between clusters and labels. In K-means ($k=2$–$5$), participant proportions remained low and similar across clusters (typically $\sim$15\%–21\%, with a maximum of 28.7\%), indicating no participant-dominant cluster. HAC produced a comparable pattern. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/participants_pca.png}
+    \caption{PCA projection for participant-related sentences.}
+    \label{fig:participants_pca}
 \end{figure}
 
-\begin{figure*}[t]
-  \includegraphics[width=0.48\linewidth]{example-image-a} \hfill
-  \includegraphics[width=0.48\linewidth]{example-image-b}
-  \caption {A minimal working example to demonstrate how to place
-    two images side-by-side.}
-\end{figure*}
+As shown in Figure~\ref{fig:participants_pca}, participant and other sentences overlap extensively. Although clustering partitions the space geometrically, these regions do not align with participant labels, indicating weak separability.
 
-\subsection{Hyperlinks}
+\paragraph{Interventions vs Other}
 
-Users of older versions of \LaTeX{} may encounter the following error during compilation:
-\begin{quote}
-\verb|\pdfendlink| ended up in different nesting level than \verb|\pdfstartlink|.
-\end{quote}
-This happens when pdf\LaTeX{} is used and a citation splits across a page boundary. The best way to fix this is to upgrade \LaTeX{} to 2018-12-01 or later.
+Intervention-related clustering showed clearer structure. K-means identified clusters with substantially higher intervention proportions (up to $\sim$45\%), compared to $\sim$18\%–22\% in less enriched clusters. HAC showed a similar contrast (36.6\% vs 18.7\%), suggesting consistent local enrichment.
 
-\subsection{Citations}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/interventions_pca.png}
+    \caption{PCA projection for intervention-related sentences.}
+    \label{fig:interventions_pca}
+\end{figure}
 
-\begin{table*}
-  \centering
-  \begin{tabular}{lll}
-    \hline
-    \textbf{Output}           & \textbf{natbib command} & \textbf{ACL only command} \\
-    \hline
-    \citep{Gusfield:97}       & \verb|\citep|           &                           \\
-    \citealp{Gusfield:97}     & \verb|\citealp|         &                           \\
-    \citet{Gusfield:97}       & \verb|\citet|           &                           \\
-    \citeyearpar{Gusfield:97} & \verb|\citeyearpar|     &                           \\
-    \citeposs{Gusfield:97}    &                         & \verb|\citeposs|          \\
-    \hline
-  \end{tabular}
-  \caption{\label{citation-guide}
-    Citation commands supported by the style file.
-    The style is based on the natbib package and supports all natbib citation commands.
-    It also supports commands defined in previous ACL style files for compatibility.
-  }
-\end{table*}
+Despite substantial overlap in PCA space (Figure~\ref{fig:interventions_pca}), intervention-related sentences are less uniformly distributed and form more concentrated regions than participants, indicating stronger but incomplete separability.
 
-Table~\ref{citation-guide} shows the syntax supported by the style files.
-We encourage you to use the natbib styles.
-You can use the command \verb|\citet| (cite in text) to get ``author (year)'' citations, like this citation to a paper by \citet{Gusfield:97}.
-You can use the command \verb|\citep| (cite in parentheses) to get ``(author, year)'' citations \citep{Gusfield:97}.
-You can use the command \verb|\citealp| (alternative cite without parentheses) to get ``author, year'' citations, which is useful for using citations within parentheses (e.g. \citealp{Gusfield:97}).
+\paragraph{Outcomes vs Other}
 
-A possessive citation can be made with the command \verb|\citeposs|.
-This is not a standard natbib command, so it is generally not compatible
-with other style files.
+Outcome-related clustering exhibited the strongest signal. K-means produced clusters with up to $\sim$52\% outcome-labelled sentences, indicating local dominance. HAC showed consistent but smaller differences (39.9\% vs 35.5\%).
 
-\subsection{References}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/outcome_pca.png}
+    \caption{PCA projection for outcome-related sentences.}
+    \label{fig:outcomes_pca}
+\end{figure}
 
-\nocite{Ando2005,andrew2007scalable,rasooli-tetrault-2015}
+Although PCA still shows substantial overlap (Figure~\ref{fig:outcomes_pca}), outcome-related content contributes more strongly to embedding structure than participants and, in some cases, interventions.
 
-The \LaTeX{} and Bib\TeX{} style files provided roughly follow the American Psychological Association format.
-If your own bib file is named \texttt{custom.bib}, then placing the following before any appendices in your \LaTeX{} file will generate the references section for you:
-\begin{quote}
-\begin{verbatim}
-\bibliography{custom}
-\end{verbatim}
-\end{quote}
+\subsubsection{Combined P/I/O Analysis}
 
-You can obtain the complete ACL Anthology as a Bib\TeX{} file from \url{https://aclweb.org/anthology/anthology.bib.gz}.
-To include both the Anthology and your own .bib file, use the following instead of the above.
-\begin{quote}
-\begin{verbatim}
-\bibliography{anthology,custom}
-\end{verbatim}
-\end{quote}
+Before filtering, the mixed class accounted for $\sim$3.2\% of sentences. After excluding mixed and other, clustering was performed on dominant P/I/O labels.
 
-Please see Section~\ref{sec:bibtex} for information on preparing Bib\TeX{} files.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/pio_pca.png}
+    \caption{PCA projection for combined P/I/O analysis.}
+    \label{fig:pio_pca}
+\end{figure}
 
-\subsection{Equations}
+K-means ($k=3$) produced well-separated geometric clusters in PCA space; however, cluster compositions remained mixed, with outcomes dominating all clusters ($\sim$47\%–58\%) and participants consistently the smallest class. HAC showed similar distributions. As illustrated in Figure~\ref{fig:pio_pca}, embedding space contains clear geometric structure, but this structure does not align with schema fields.
 
-An example equation is shown below:
-\begin{equation}
-  \label{eq:example}
-  A = \pi r^2
-\end{equation}
+\subsubsection{Overall Interpretation}
 
-Labels for equation numbers, sections, subsections, figures and tables
-are all defined with the \verb|\label{label}| command and cross references
-to them are made with the \verb|\ref{label}| command.
+Across all experiments, sentence embeddings exhibit stable geometric structure, but this structure only weakly corresponds to schema fields. Participants show minimal clustering signal, while interventions and outcomes exhibit stronger local enrichment, though none form clean, field-specific clusters.
 
-This an example cross-reference to Equation~\ref{eq:example}.
+The combined P/I/O analysis further confirms that embedding geometry does not map cleanly to schema categories. These findings suggest that unsupervised clustering alone is insufficient for schema extraction, motivating the use of explicit extraction pipelines.
 
-\subsection{Appendices}
+\subsubsection{Limitations}
 
-Use \verb|\appendix| before any appendix section to switch the section numbering over to letters. See Appendix~\ref{sec:appendix} for an example.
+This analysis has several limitations. Sentence-level labels were heuristically derived from token-level annotations, and sentences may contain multiple fields, introducing noise. In addition, PCA provides only a low-dimensional approximation of the embedding space.
 
-\section{Bib\TeX{} Files}
-\label{sec:bibtex}
+Despite these limitations, the clustering results provide a useful empirical basis for subsequent pipeline design.
 
-Unicode cannot be used in Bib\TeX{} entries, and some ways of typing special characters can disrupt Bib\TeX's alphabetization. The recommended way of typing special characters is shown in Table~\ref{tab:accents}.
+\section{Conclusions}
 
-Please ensure that Bib\TeX{} records contain DOIs or URLs when possible, and for all the ACL materials that you reference.
-Use the \verb|doi| field for DOIs and the \verb|url| field for URLs.
-If a Bib\TeX{} entry has a URL or DOI field, the paper title in the references section will appear as a hyperlink to the paper, using the hyperref \LaTeX{} package.
 
-\section*{Limitations}
 
-This document does not cover the content requirements for ACL or any
-other specific venue.  Check the author instructions for
-information on
-maximum page lengths, the required ``Limitations'' section,
-and so on.
 
-\section*{Acknowledgments}
 
-This document has been adapted
-by Steven Bethard, Ryan Cotterell and Rui Yan
-from the instructions for earlier ACL and NAACL proceedings, including those for
-ACL 2019 by Douwe Kiela and Ivan Vuli\'{c},
-NAACL 2019 by Stephanie Lukin and Alla Roskovskaya,
-ACL 2018 by Shay Cohen, Kevin Gimpel, and Wei Lu,
-NAACL 2018 by Margaret Mitchell and Stephanie Lukin,
-Bib\TeX{} suggestions for (NA)ACL 2017/2018 from Jason Eisner,
-ACL 2017 by Dan Gildea and Min-Yen Kan,
-NAACL 2017 by Margaret Mitchell,
-ACL 2012 by Maggie Li and Michael White,
-ACL 2010 by Jing-Shin Chang and Philipp Koehn,
-ACL 2008 by Johanna D. Moore, Simone Teufel, James Allan, and Sadaoki Furui,
-ACL 2005 by Hwee Tou Ng and Kemal Oflazer,
-ACL 2002 by Eugene Charniak and Dekang Lin,
-and earlier ACL and EACL formats written by several people, including
-John Chen, Henry S. Thompson and Donald Walker.
-Additional elements were taken from the formatting instructions of the \emph{International Joint Conference on Artificial Intelligence} and the \emph{Conference on Computer Vision and Pattern Recognition}.
+
+
+
 
 % Bibliography entries for the entire Anthology, followed by custom entries
 %\bibliography{anthology,custom}
