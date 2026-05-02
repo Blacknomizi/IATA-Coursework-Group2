@@ -130,7 +130,7 @@ Sentences were encoded using the pretrained sentence-transformer model \texttt{a
 
 \subsubsection{Clustering and Evaluation}
 
-Two unsupervised methods were applied: K-means (with $k=2$–$5$ for binary tasks and $k=3$ for P/I/O) and hierarchical agglomerative clustering (HAC). Cluster quality was evaluated by comparing cluster assignments with sentence-level labels, using the proportion of field-related sentences within each cluster.
+Two unsupervised methods were applied: K-means (with $k=2$–$5$ for binary tasks and $k=3$ for P/I/O) and hierarchical agglomerative clustering (HAC). Cluster quality was evaluated in two complementary ways: geometrically, using silhouette scores for K-means solutions, and semantically, by comparing cluster assignments with sentence-level labels using the proportion of field-related sentences within each cluster.
 
 \subsubsection{Visualisation}
 
@@ -152,7 +152,7 @@ A supplementary P/I/O analysis assigned each sentence to the field with the high
 
 \paragraph{Participants vs Other}
 
-Participant-related clustering showed weak correspondence between clusters and labels. In K-means ($k=2$–$5$), participant proportions remained low and similar across clusters (typically $\sim$15\%–21\%, with a maximum of 28.7\%), indicating no participant-dominant cluster. HAC produced a comparable pattern. 
+Participant-related clustering showed weak correspondence between clusters and labels. In K-means ($k=2$–$5$), participant proportions remained low and similar across clusters (typically $\sim$15\%–21\%, with a maximum of 28.7\%), indicating no participant-dominant cluster. The corresponding silhouette scores were also consistently low, decreasing from 0.0290 at $k=2$ to 0.0235 at $k=5$, suggesting that the geometric separation of these clusters was weak. HAC produced a comparable pattern.
 
 \begin{figure}[htbp]
     \centering
@@ -165,7 +165,7 @@ As shown in Figure~\ref{fig:participants_pca}, participant and other sentences o
 
 \paragraph{Interventions vs Other}
 
-Intervention-related clustering showed clearer structure. K-means identified clusters with substantially higher intervention proportions (up to $\sim$45\%), compared to $\sim$18\%–22\% in less enriched clusters. HAC showed a similar contrast (36.6\% vs 18.7\%), suggesting consistent local enrichment.
+Intervention-related clustering showed clearer structure. K-means identified clusters with substantially higher intervention proportions (up to $\sim$45\%), compared to $\sim$18\%–22\% in less enriched clusters. However, silhouette scores remained low across all tested values of $k$ (from 0.0291 at $k=2$ to 0.0225 at $k=5$), indicating that even these relatively more informative clusters were not strongly separated geometrically. HAC showed a similar contrast (36.6\% vs 18.7\%), suggesting consistent local enrichment.
 
 \begin{figure}[htbp]
     \centering
@@ -178,7 +178,7 @@ Despite substantial overlap in PCA space (Figure~\ref{fig:interventions_pca}), i
 
 \paragraph{Outcomes vs Other}
 
-Outcome-related clustering exhibited the strongest signal. K-means produced clusters with up to $\sim$52\% outcome-labelled sentences, indicating local dominance. HAC showed consistent but smaller differences (39.9\% vs 35.5\%).
+Outcome-related clustering exhibited the strongest signal. K-means produced clusters with up to $\sim$52\% outcome-labelled sentences, indicating local dominance. Nevertheless, silhouette scores again remained low, ranging from 0.0289 at $k=2$ to 0.0225 at $k=5$, which suggests that the overall geometric clustering structure was still weak despite stronger local outcome enrichment. HAC showed consistent but smaller differences (39.9\% vs 35.5\%).
 
 \begin{figure}[htbp]
     \centering
@@ -200,11 +200,11 @@ Before filtering, the mixed class accounted for $\sim$3.2\% of sentences. After 
     \label{fig:pio_pca}
 \end{figure}
 
-K-means ($k=3$) produced well-separated geometric clusters in PCA space; however, cluster compositions remained mixed, with outcomes dominating all clusters ($\sim$47\%–58\%) and participants consistently the smallest class. HAC showed similar distributions. As illustrated in Figure~\ref{fig:pio_pca}, embedding space contains clear geometric structure, but this structure does not align with schema fields.
+K-means ($k=3$) produced visually distinct clusters in PCA space; however, cluster compositions remained mixed, with outcomes dominating all clusters ($\sim$47\%–58\%) and participants consistently the smallest class. HAC showed similar distributions. The silhouette score for the three-way K-means solution was only 0.0269, indicating weak overall geometric separation despite the apparent partitioning in PCA space. As illustrated in Figure~\ref{fig:pio_pca}, the embedding space contains stable geometric structure, but this structure does not align cleanly with schema fields.
 
 \subsubsection{Overall Interpretation}
 
-Across all experiments, sentence embeddings exhibit stable geometric structure, but this structure only weakly corresponds to schema fields. Participants show minimal clustering signal, while interventions and outcomes exhibit stronger local enrichment, though none form clean, field-specific clusters.
+Across all experiments, sentence embeddings exhibit some geometric structure, but this structure only weakly corresponds to schema fields. This is also reflected in the consistently low silhouette scores across K-means settings, which remained around 0.02--0.03 for all three binary comparisons. Participants show minimal clustering signal, while interventions and outcomes exhibit stronger local enrichment, though none form clean, field-specific clusters.
 
 The combined P/I/O analysis further confirms that embedding geometry does not map cleanly to schema categories. In other words, the three-way clustering essentially failed to cleanly separate participants, interventions, and outcomes. These findings suggest that unsupervised clustering alone is insufficient for schema extraction, motivating the use of explicit extraction pipelines. 
 
