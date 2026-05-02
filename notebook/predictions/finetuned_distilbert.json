@@ -1,0 +1,252 @@
+{
+  "10070173": {
+    "participants": "seasonal allergic rhinitis | Two hundred and eighty-four",
+    "interventions": "budesonide Turbuhaler | budesonide aqua | budesonide Turbuhaler 400 microg/day | budesonide aqua 256 microg/day | budesonide | Turbuhaler",
+    "outcomes": "quality of life | Mean daily nasal symptom scores | adverse events | epistaxis and headache | nasal irritation | in quality of life"
+  },
+  "10390665": {
+    "participants": "children | 90 | 4-10 years",
+    "interventions": "prophylactic granisetron | perphenazine | granisetron",
+    "outcomes": "post-operative | clinically serious adverse events | post-operative vomiting"
+  },
+  "10475150": {
+    "participants": "healthy | primary hypothyroidism | 8 | 6 women | hypothyroidism",
+    "interventions": "somatostatin ( octreotide ) | Somatostatin | saline | octreotide ( Sandostatin | octreotide | melatonin",
+    "outcomes": "secretion | urinary excretion of melatonin | GH secretion | nocturnal melatonin secretion | total nocturnal secretion of TSH | nocturnal secretion | urinary excretion"
+  },
+  "10578479": {
+    "participants": "premenopausal | 36",
+    "interventions": "soy | phytoestrogens | soy products | isoflavonoid phytoestrogens | OC | isoflavones",
+    "outcomes": "serum estrone , estradiol , sex hormone-binding globulin , dehydroepiandrosterone sulfate | prolactin , or progesterone concentrations | soy feeding | menstrual cycle length | the urinary estrogen metabolite ratio of 2-hydroxyestrone to 16 alpha-hydroxyestrone | Levels of urinary estrogen metabolites | serum sex hormones | urinary estrogen metabolite ratio"
+  },
+  "10589810": {
+    "participants": "40 | 20",
+    "interventions": "root instrumentation | conventional steel | non-tooth substance removing plastic curettes | removing | plastic curettes | conventional steel curettes | curettes",
+    "outcomes": "Clinical | bleeding on probing ( BOP ) | probing pocket depth ( PPD ) | BOP"
+  },
+  "10763172": {
+    "participants": "61 | operation | 30",
+    "interventions": "xylometazoline and dexpanthenol ] | Xylometazoline with Dexpanthenol ( Nasic ) | Xylometazoline alone | placebo | Xylometazoline-Dexpanthenol nasal-spray | Xylometazoline nasal spray | Xylometazoline-Dexpanthenol | Xylometazoline",
+    "outcomes": "wound healing | efficacy | tolerability | nasal-breathing-resistance | medicinal treatment | rhinitis"
+  },
+  "10764172": {
+    "participants": "hysterectomy | Forty",
+    "interventions": "Intrathecal morphine | morphine | intrathecal 0.5 mg morphine ( Group IT0.5 ) | intrathecal 0.1 mg morphine ( Group IT0.1 ) | 10 mg morphine i.v . | inhalation anesthesia alone",
+    "outcomes": "NK | blood | postoperative pain score | side effects | NK cell activity | NK cell activities | plasma adrenaline | noradrenaline concentrations | plasma cortisol levels | pain score"
+  },
+  "10912743": {
+    "participants": "treated hypertensive patients | Fifteen | 142 | 76 men | 66 women | 59 +/- 5.9 | 71",
+    "interventions": "low-dose aspirin | aspirin",
+    "outcomes": "clinic and ambulatory blood pressure | blood pressure ( BP ) control | systolic ( SBP ) | ( DBP ) | clinic SBP and DBP | Ambulatory SBP and DBP | deltaDBP"
+  },
+  "10934569": {
+    "participants": "children | pervasive developmental disorder | Young | autism",
+    "interventions": "intensive early intervention | intensive treatment | parent training",
+    "outcomes": "measures of intelligence , visual-spatial skills , language , and academics , | adaptive functioning or behavior problems"
+  },
+  "10940525": {
+    "participants": "",
+    "interventions": "selamectin",
+    "outcomes": "Efficacy | safety | allergy dermatitis | FAD ) | Flea burdens | flea comb | mean flea counts | heartworm"
+  },
+  "11099086": {
+    "participants": "children | infants | 201 | 6 months to 10 years",
+    "interventions": "Oral ciprofloxacin | intramuscular ceftriaxone | ciprofloxacin | ciprofloxacin suspension | placebo | im ceftriaxone | ceftriaxone",
+    "outcomes": "efficacy | safety | diarrheagenic Escherichia | Clinical response and safety | bacteriologic eradication | Clinical cure or improvement | Serum ciprofloxacin values | drug-related adverse events"
+  },
+  "11229858": {
+    "participants": "children | malaria",
+    "interventions": "antipyretic drugs | antipyretics | naproxen | metamizol | Antipyretic treatment",
+    "outcomes": "fever peaks | fever clearance"
+  },
+  "1131298": {
+    "participants": "alimentary hyperlipemia | 10",
+    "interventions": "essential oils | garlic and onion | garlic or onion",
+    "outcomes": "alimentary hyperlipemia | serum cholesterol and plasma fibrinogen | coagulation time and fibrinolytic activity"
+  },
+  "11317090": {
+    "participants": "osteoarthritis | 249 adults | 55 to 75",
+    "interventions": "aquatic exercise | exercise",
+    "outcomes": "cost | Cost per quality-adjusted life year ( | ) | Quality of Well-Being Scale ( QWB ) | Current Health Desirability Rating ( CHDR ) | Scale ( CES-D | Quality of Life Scale ( | costs | health-related quality of life | Costs/QALY"
+  },
+  "11381289": {
+    "participants": "",
+    "interventions": "ramipril | an angiotensin-converting enzyme ( ACE ) inhibitor | vitamin E | ACE inhibitor therapy",
+    "outcomes": "rates of death | myocardial infarction , stroke , coronary revascularization | cardiac arrest and heart failure | blood pressure"
+  },
+  "11401641": {
+    "participants": "open angle glaucoma or ocular hypertension | 53 | open angle glaucoma | glaucoma | hypertension",
+    "interventions": "latanoprost | timolol | latanoprost to timolol",
+    "outcomes": "intraocular pressure ( IOP ) | IOP | IOP reduction"
+  },
+  "11454878": {
+    "participants": "epithelial ovarian carcinoma | disease | 474",
+    "interventions": "pegylated liposomal doxorubicin | topotecan | pegylated liposomal doxorubicin ( PLD ) | platinum-based chemotherapy | PLD 50 | infusion | topotecan 1.5 | PLD",
+    "outcomes": "efficacy and safety | overall progression-free survival rates | overall response rates | Median overall survival times | progression-free survival | overall survival | PLD | survival trend | Severe hematologic toxicity"
+  },
+  "11495215": {
+    "participants": "nonsmokers | Women | Sixty",
+    "interventions": "Oral contraceptive | oral contraceptives ( OCs ) | OCs | nicotine gum",
+    "outcomes": "cardiovascular | cardiovascular and lipid reactivity | Heart rate , blood pressure , and lipid measures | cardiovascular reactivity | heart rate and diastolic blood pressure reactivity | cardiovascular or lipid stress reactivity"
+  },
+  "11642083": {
+    "participants": "myocardial | ( TLT | 106 males | 47 | 30 | 29",
+    "interventions": "Neoton and thrombolytic therapy | neoton therapy | therapy | without TLT and neoton | TLT with streptokinase preparations | streptokinase preparations and neoton | TLT | neoton",
+    "outcomes": "systolic function | the left ventricle | arrhythmia | symptoms | Left ventricular systolic function | progression of left ventricular dilation | end systolic and diastolic volumes of the left ventricle | Antiarrhythmic action | left ventricular systolic dysfunction"
+  },
+  "11737955": {
+    "participants": "60-year-old | older adults",
+    "interventions": "Antioxidant supplementation | antipyrine | supplementation | dl-alpha-tocopheryl acetate | ascorbic acid | beta-carotene | placebo | para- | ortho-hydroxyantipyrine",
+    "outcomes": "plasma concentrations of alpha-tocopherol | beta-carotene | and ortho-hydroxyantipyrine | antipyrine | increase | thiobarbituric acid reactive substances in plasma | oxidative stress"
+  },
+  "11750293": {
+    "participants": "arthritis | diagnosed rheumatoid arthritis ( RA ) | Twenty-two | RA | 22",
+    "interventions": "",
+    "outcomes": "depressed | depression | disability | pain | beliefs"
+  },
+  "11829043": {
+    "participants": "stoma surgery | Eighteen",
+    "interventions": "progressive muscle relaxation training | instructions | progressive muscle relaxation training ( PMRT )",
+    "outcomes": "anxiety level | self-reported quality of life ( QoL ) | Chinese State-Trait Anxiety Inventory ( C-STAI ) | Quality of Life Index for Colostomy ( QoL-Colostomy | Hong | version of the | Health | Quality of Life Scale ( WHOQoL ) | C-STAI score | WHOQoL score | physical health/independence | general perception of QoL | quality of life | state anxiety"
+  },
+  "11891832": {
+    "participants": "44 | inclusion body myositis",
+    "interventions": "methotrexate | placebo | oral methotrexate | placebo-controlled",
+    "outcomes": "weakness progression | quantitative muscle strength testing sum scores | manual muscle testing sum scores | activity scale scores | ' own assessments | Serum creatine kinase activity | progression | muscle weakness"
+  },
+  "12139812": {
+    "participants": "pterygium | 208 | 229",
+    "interventions": "Limbal epithelial autograft transplantation | pterygium excision | excision of pterygium with limbal epithelial autograft transplantation surgery | simple pterygium excision ( | epithelial autograft transplantation",
+    "outcomes": "corneal transparency | epithelial healing | abnormal proliferation of pterygium-like tissue"
+  },
+  "12477021": {
+    "participants": "Thirty-five",
+    "interventions": "NCT | Reichert | Plus | Goldmann applanation",
+    "outcomes": "of accuracy | intra-ocular pressure ( IOP )"
+  },
+  "12576806": {
+    "participants": "57 | primary ureteropelvic junction obstruction",
+    "interventions": "stenting | internal endopyelotomy stent placement | renography",
+    "outcomes": "ipsilateral glomerular filtration rate | drainage pattern | Stent related symptoms | of urinary tract infections"
+  },
+  "12586799": {
+    "participants": "advanced nasopharyngeal carcinoma | advanced NPC | 284 | stage III",
+    "interventions": "concurrent chemoradiotherapy | radiotherapy alone | concurrent chemoradiotherapy ( CCRT ) | radiotherapy ( RT ) alone | concurrent chemotherapy with cisplatin 20 mg/m ( 2 ) /d plus fluorouracil 400 mg/m ( | ) | infusion | RT-alone",
+    "outcomes": "overall | progression-free survival | Survival | tumor relapse | 5-year overall survival rates | 5-year progression-free survival rates | toxicity | leukopenia | emesis | treatment-related deaths"
+  },
+  "12595499": {
+    "participants": "cardiovascular risk | diabetes | 9297 | 3577 | 7674",
+    "interventions": "ramipril | placebo | albuminuria",
+    "outcomes": "subsequent clinical proteinuria | progression of albuminuria | proteinuria | microalbuminuria | clinical proteinuria | albuminuria"
+  },
+  "12709693": {
+    "participants": "outpatient colonoscopy | 100 adult",
+    "interventions": "remifentanil | propofol | anesthesia | fentanyl | midazolam | analgesia/sedation | Sedation | intravenous anesthesia | TIVA",
+    "outcomes": "quality | analgesia | Pain Rating Scale ( NRS ) | recovery level | of psychomotor efficiency | painless | average pain intensity score | mean arterial pressure | heart rate | signs of respiratory depression | satisfactory hemodynamic stability | minor respiratory depression | rapid"
+  },
+  "1286547": {
+    "participants": "borderline hypertensive patients | IDDM-type diabetes mellitus | Twenty-nine | borderline hypertension | hypertension",
+    "interventions": "dihydropyridine calcium channel blocker | placebo-controlled | nitrendipine | placebo",
+    "outcomes": "platelet thromboxane formation | plasma levels of platelet factor 4 and aggregation responses to collagen and ADP | formation | acid ( AA ) | change of thromboxane synthesis | PF4 plasma levels | Whole blood aggregation | collagen dependent platelet activation"
+  },
+  "12960652": {
+    "participants": "infants | gastrointestinal diseases | 21 | 0-2 months | 40 | 0-2",
+    "interventions": "",
+    "outcomes": "gastric rhythms | obstruction | pathologic | persistent phasic activity pattern | Short-term phasic activity | gastric phasic activity | phasic"
+  },
+  "1459268": {
+    "participants": "Forty-eight",
+    "interventions": "short | ultrashort regimens | gonadotropin-releasing hormone agonist | ultrashort | gonadotropin-releasing hormone agonist ( GnRH-a ) | GnRH-a",
+    "outcomes": "Response to ovarian stimulation and occurrence of spontaneous luteinizing hormone ( LH ) surges . | ovulation induction , fertilization , and pregnancy rates | LH surge"
+  },
+  "14679127": {
+    "participants": "advanced epithelial ovarian carcinoma | advanced epithelial ovarian cancer | bidimensionally measurable disease | 226",
+    "interventions": "topotecan | paclitaxel",
+    "outcomes": "Long-term survival | Life | pain | diarrhoea | fatigue | nausea and vomiting | dyspnea | constipation | insomnia | median time to progression | median survival | survival | haematological toxicity | Non-haematological toxicity"
+  },
+  "14739125": {
+    "participants": "",
+    "interventions": "torcetrapib | ester transfer protein ( CETP ) inhibitor torcetrapib | placebo",
+    "outcomes": "lipoprotein | high-density lipoprotein cholesterol ( HDL-C ) levels | plasma drug levels | CETP mass | CETP inhibition | HDL-C | Total plasma cholesterol | nonHDL-C | low-density lipoprotein cholesterol | Apolipoprotein A-I and E | apoB | Cholesteryl ester content | triglyceride"
+  },
+  "14763035": {
+    "participants": "ambulatory peritoneal dialysis | CAPD | 24 | ventricular mass",
+    "interventions": "selective angiotensin receptor antagonist | Valsartan | selective angiotensin II receptor blocker ( ARB ) | ARB valsartan | placebo",
+    "outcomes": "blood pressure ( BP ) | aortic and large-artery compliance and arterial wave reflections [ pulse wave velocity ( PWV ) | index ( AI ) application tonometry ] | echocardiography | body weight , BP ( mercury sphygmomanometer ) , serum creatinine , electrolytes , complete blood cell counts , urine volume , drainage volume , and weekly creatinine clearance | Systolic and diastolic BP | LVMi | PWV and AI | arterial hemodynamics"
+  },
+  "15014018": {
+    "participants": "2000 | stage IIB and III melanoma | 713",
+    "interventions": "adjuvant high-dose interferon | high-dose IFN-alpha 2b therapy | IFN-alpha 2b ( HDI )",
+    "outcomes": "Survival | disease status | relapse-free survival ( RFS ) -but | overall survival ( OS ) | ulceration | recurrent disease at entry"
+  },
+  "15133359": {
+    "participants": "biventricular implantation | Thirty-four",
+    "interventions": "pacing system | ( | ) | dedicated",
+    "outcomes": "CS cannulation time | Time to successful catheterization of CS | Fluoroscopy time | Total contrast dye volume to search and engage the CS ostium | procedural time | contrast dye volume"
+  },
+  "15193668": {
+    "participants": "Children | 576 | 10.06",
+    "interventions": "Combined descriptive and explanatory information | descriptive and explanatory information | receiving either descriptive ( AUT-D ) or descriptive and explanatory information ( AUT-D + E ) | descriptive information alone | explanatory",
+    "outcomes": "intentions | of attitudes ( Adjective Checklist ) and behavioral intentions ( Shared Activities Questionnaire ) | ' attitudes | behavioral intentions | and behavioral intentions"
+  },
+  "15358868": {
+    "participants": "adults | autism | children",
+    "interventions": "Superior visual search | visual search tasks | visual | at searching for targets",
+    "outcomes": "target-distractor similarity | visual search performance | visual discrimination ability | item detection"
+  },
+  "15848261": {
+    "participants": "stroke | post-acute hemiparetic | Twenty-six | hemiplegia | Thirteen",
+    "interventions": "biofeedback | conventional physical therapy | balance retraining | physical therapy ( control group ) | therapy and retraining ( experimental | early conventional therapy | therapy combined with standing balance training by biofeedback ( BPM Monitor )",
+    "outcomes": "gait | Gait spatiotemporal | clinical scores | spasticity | time between stroke | the beginning of walking | Gait velocity | walking pattern | duration of the paretic limb single stance | duration of the reception double stance | paretic limb"
+  },
+  "15854186": {
+    "participants": "98",
+    "interventions": "Cophenylcaine spray | placebo | cophenylcaine or placebo nasal spray | cophenylcaine",
+    "outcomes": "pain | unpleasantness of taste | overall discomfort experienced | minimal pain | discomfort | pain or overall discomfort experienced | sensation of bad taste | pain experienced | taste"
+  },
+  "15858959": {
+    "participants": "children | acute diarrhoea | Two hundred",
+    "interventions": "Saccharomyces boulardii | Lactobacillus | Saccharomyces | S. | S. boulardii | granulated form | S. boulardii group ) | placebo ( placebo group | placebo | placebo-controlled",
+    "outcomes": "medians of the average stool frequency | duration of diarrhoea | watery diarrhoea | duration of hospital stay | diarrhoea | duration of acute diarrhoea"
+  },
+  "16167234": {
+    "participants": "digestive surgery | Forty",
+    "interventions": "branch chain amino acid enriched formula | branch chain amino acid ( BCAA ) enriched formula | parenteral nutrition with | BCAA enriched | routine amino acid ( control",
+    "outcomes": "postoperative fatigue | nutritional status | fatigue | Nitrogen balance , serum total protein , albumin , prealbumin , transferrin , retinol binding protein and postoperative fatigue score | cumulative postoperative fatigue scores | positive nitrogen balance | cumulative nitrogen balance | elevation of serum total protein , albumin , prealbumin , transferrin | serum level of retinol binding protein"
+  },
+  "16295154": {
+    "participants": "children | autistic spectrum disorder | autistic spectrum disorder ( ASD | ASD",
+    "interventions": "nursing intervention designed | nursing intervention | care plus 3 hours contact with a pediatric nurse practitioner ( PNP ) for counseling , instruction | and assistance with | plan | care post-diagnosis | consultation session | the | tests | copy of the | treatment plan",
+    "outcomes": "of event ( diagnosis ) | services | impact of event \" | perceived stress \""
+  },
+  "16427787": {
+    "participants": "",
+    "interventions": "melatonin | placebo",
+    "outcomes": "activation | fatigue"
+  },
+  "16505427": {
+    "participants": "anemic patients | cancer | cancer-associated anemia | Three hundred sixty-five | One hundred eighty-three",
+    "interventions": "erythropoietin | epoetin alfa | epoetin alfa 40,000 U subcutaneously ( SC ) | standard weekly epoetin alfa ( 40K arm ) | 120,000 U of epoetin alfa ( 120K arm ) SC | epoetin",
+    "outcomes": "patients requiring transfusions | end-of-study Hb | Toxicities | thromboembolism | overall survival | global quality of life ( QOL ) | global QOL improvement"
+  },
+  "1669598": {
+    "participants": "asthma | 10",
+    "interventions": "Local immunotherapy | powder extract | parenteral immunotherapy | local immunotherapy ( LI ) | powder extract of house dust mite ( HDM ) | parenteral immunotherapy ( PI ) | LI | placebo | PI | disodium cromoglycate ( DSCG",
+    "outcomes": "symptoms score | peak expiratory flow ( PEF ) -derived parameters | bronchial response | bronchial responsiveness to methacholine | ultrasonically nebulized distilled water ( | ) | immunologic humoral and cellular parameters | blood | local important adverse reactions | systemic side effects"
+  },
+  "17293018": {
+    "participants": "diarrhea | 77",
+    "interventions": "whey protein concentrate | Clostridium difficile | whey protein concentrate prepared | difficile | anti-C. difficile whey protein concentrate ( anti-CD WPC ) | WPC | regular whey protein concentrate",
+    "outcomes": "safety | adverse event"
+  },
+  "17321989": {
+    "participants": "acute myeloid leukemia and myelodysplastic syndromes | acute myeloid leukemia ( AML ) | syndromes | MDS",
+    "interventions": "itraconazole capsules | fluconazole capsules | fluconazole | itraconazole",
+    "outcomes": "Adverse events | cases | probable or possible infections | frequency of infection | tolerated"
+  },
+  "17616069": {
+    "participants": "postpartum | 50 women | anemia",
+    "interventions": "trivalent ferrum preparation | sacharose ferric oxide ( Venofer ) | trivalent saccharose ferric oxide",
+    "outcomes": "safeness | red blood count | serum values of soluble transferrin receptors and ferritin | cell saturation | body iron reserves | adverse events | adverse event"
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "10070173": {
+    "participants": "31",
+    "interventions": "budesonide | treatment | control",
+    "outcomes": "quality of life | adverse events | improvement | safe"
+  },
+  "10390665": {
+    "participants": "children | paediatric | 4 | 10 | 70 | 45 | 78 | 24",
+    "interventions": "granisetron | anesthesia",
+    "outcomes": "efficacy | vomiting | adverse events"
+  },
+  "10475150": {
+    "participants": "healthy volunteers | women | 23 | healthy | controls | 22 | 4",
+    "interventions": "somatostatin | saline | gh",
+    "outcomes": "gh secretion"
+  },
+  "10578479": {
+    "participants": "women | cancer | 20",
+    "interventions": "",
+    "outcomes": "effects"
+  },
+  "10589810": {
+    "participants": "20 | 10 | 42",
+    "interventions": "treatment | control",
+    "outcomes": "effects | sensitivity | side effects | effective"
+  },
+  "10763172": {
+    "participants": "30",
+    "interventions": "treatment | placebo",
+    "outcomes": "efficacy and tolerability | efficacy | improvement | effective"
+  },
+  "10764172": {
+    "participants": "ten | 10 | ten patients | controls | 23 | 4 | 45 | all",
+    "interventions": "morphine | anesthesia",
+    "outcomes": "activity | effects | postoperative pain | side effects | pain"
+  },
+  "10912743": {
+    "participants": "hypertensive | hypertension | men | women | 71 | controls | all | 24 | 95",
+    "interventions": "aspirin | control | treatment",
+    "outcomes": "effects | blood pressure | hypertension"
+  },
+  "10934569": {
+    "participants": "children | pervasive developmental disorder | young children | autism | 24 | all",
+    "interventions": "intervention | treatment",
+    "outcomes": "autism"
+  },
+  "10940525": {
+    "participants": "dogs | all | three | 30 | 14 | 99 | 4 | adult | 19",
+    "interventions": "treatment | control",
+    "outcomes": "efficacy and safety | adverse events | effective | safe"
+  },
+  "11099086": {
+    "participants": "children | infants | 201 | 10 | 70 | 95 | 106 | 4 | 127 | 23 | 14 | 99 | all",
+    "interventions": "ciprofloxacin | treatment | placebo",
+    "outcomes": "efficacy and safety | safety | improvement | adverse events | safe | effective"
+  },
+  "11229858": {
+    "participants": "children",
+    "interventions": "treatment",
+    "outcomes": "fever"
+  },
+  "1131298": {
+    "participants": "10 | healthy | all",
+    "interventions": "",
+    "outcomes": "activity | beneficial effects"
+  },
+  "11317090": {
+    "participants": "20 | 95 | controls | 32",
+    "interventions": "questionnaires",
+    "outcomes": "quality of life"
+  },
+  "11381289": {
+    "participants": "stroke | diabetes",
+    "interventions": "treatment",
+    "outcomes": "death | stroke | complications | effects | blood pressure"
+  },
+  "11401641": {
+    "participants": "hypertension | three | 24 | 23 | 19 | 25",
+    "interventions": "treatment",
+    "outcomes": "hypertension | efficacy | effective"
+  },
+  "11454878": {
+    "participants": "4 | 19 | 56 | 28 | 23 | 71",
+    "interventions": "chemotherapy | treatment",
+    "outcomes": "efficacy and safety | sensitivity | survival | overall survival | hematologic toxicity | efficacy | safety"
+  },
+  "11495215": {
+    "participants": "women | healthy | 12",
+    "interventions": "nicotine",
+    "outcomes": "stress | heart rate | blood pressure | recovery"
+  },
+  "11642083": {
+    "participants": "106 | 30 | 14 | 28",
+    "interventions": "treatment",
+    "outcomes": "effects | hospital stay"
+  },
+  "11737955": {
+    "participants": "12 | 45 | 14 | 4",
+    "interventions": "ascorbic acid | placebo",
+    "outcomes": "stress | effects"
+  },
+  "11750293": {
+    "participants": "22 | five",
+    "interventions": "control | treatment",
+    "outcomes": "disability | pain"
+  },
+  "11829043": {
+    "participants": "three | 10 | 20 | 4",
+    "interventions": "control",
+    "outcomes": "anxiety | quality of life"
+  },
+  "11891832": {
+    "participants": "4 | 95",
+    "interventions": "treatment | placebo | placebo-controlled",
+    "outcomes": "disease progression | activity"
+  },
+  "12139812": {
+    "participants": "106 | 28 | 22 | 4 | 41 | 42",
+    "interventions": "treatment",
+    "outcomes": "effects | recovery"
+  },
+  "12477021": {
+    "participants": "five | 12",
+    "interventions": "",
+    "outcomes": "accuracy | agreement"
+  },
+  "12576806": {
+    "participants": "4 | all | 12 | 22 | 24 | 23",
+    "interventions": "",
+    "outcomes": "duration | complications"
+  },
+  "12586799": {
+    "participants": "cancer | 20 | 65 | 46 | 71",
+    "interventions": "chemotherapy | cisplatin | treatment",
+    "outcomes": "survival | overall survival | toxicity | deaths"
+  },
+  "12595499": {
+    "participants": "diabetes | 4 | 95 | 12 | 24 | 32 | 78",
+    "interventions": "placebo",
+    "outcomes": "proteinuria | effects | serum creatinine"
+  },
+  "12709693": {
+    "participants": "adult | 20 | 25 | all | 4 | 15",
+    "interventions": "remifentanil | propofol | anesthesia | fentanyl",
+    "outcomes": "analgesia | effective | pain | recovery | duration | pain intensity | mean arterial pressure | heart rate"
+  },
+  "1286547": {
+    "participants": "hypertensive | diabetes | hypertension | 20 | 4",
+    "interventions": "placebo-controlled | placebo | treatment",
+    "outcomes": "hypertension | effects"
+  },
+  "12960652": {
+    "participants": "infants | healthy | all | 19 | 32",
+    "interventions": "control | treatment",
+    "outcomes": "activity"
+  },
+  "1459268": {
+    "participants": "eight",
+    "interventions": "",
+    "outcomes": ""
+  },
+  "14679127": {
+    "participants": "cancer | eight | 30 | 25 | 14 | 12 | 4 | 20",
+    "interventions": "paclitaxel | treatment",
+    "outcomes": "survival | quality of life | pain | nausea | vomiting | time to progression | efficacy | toxicity"
+  },
+  "14739125": {
+    "participants": "healthy | five | 10 | 30 | 14 | all | 42",
+    "interventions": "placebo",
+    "outcomes": "well tolerated | effects"
+  },
+  "14763035": {
+    "participants": "24 | women | men | 12 | 14 | 10 | 4",
+    "interventions": "placebo",
+    "outcomes": "blood pressure | serum creatinine"
+  },
+  "15014018": {
+    "participants": "12 | all | 49",
+    "interventions": "treatment",
+    "outcomes": "effects | survival | overall survival | effective | improvement"
+  },
+  "15133359": {
+    "participants": "4 | 10 | 14",
+    "interventions": "",
+    "outcomes": ""
+  },
+  "15193668": {
+    "participants": "autism | children | 10",
+    "interventions": "videotapes",
+    "outcomes": "autism | effects"
+  },
+  "15358868": {
+    "participants": "autism | children | controls",
+    "interventions": "control",
+    "outcomes": "autism"
+  },
+  "15848261": {
+    "participants": "stroke | 30",
+    "interventions": "control",
+    "outcomes": "stroke | improvement | duration"
+  },
+  "15854186": {
+    "participants": "",
+    "interventions": "placebo",
+    "outcomes": "pain"
+  },
+  "15858959": {
+    "participants": "children | 4",
+    "interventions": "treatment | placebo | placebo-controlled",
+    "outcomes": "effects | efficacy | duration | hospital stay"
+  },
+  "16167234": {
+    "participants": "20",
+    "interventions": "control | tpn",
+    "outcomes": ""
+  },
+  "16295154": {
+    "participants": "children | 31",
+    "interventions": "intervention | counseling | treatment | control",
+    "outcomes": "diagnostic | effects | stress | feasible"
+  },
+  "16427787": {
+    "participants": "",
+    "interventions": "placebo | sleep deprivation",
+    "outcomes": "effects | activity"
+  },
+  "16505427": {
+    "participants": "cancer | three | five | 23 | 22 | 15",
+    "interventions": "treatment",
+    "outcomes": "overall survival | quality of life | improvement"
+  },
+  "1669598": {
+    "participants": "asthma | 10",
+    "interventions": "placebo | treatment",
+    "outcomes": "efficacy | side effects | effective | well tolerated"
+  },
+  "17293018": {
+    "participants": "",
+    "interventions": "",
+    "outcomes": "safety | safe"
+  },
+  "17321989": {
+    "participants": "4 | 10",
+    "interventions": "itraconazole | fluconazole | chemotherapy",
+    "outcomes": "effects | adverse events | remission | well tolerated | efficacy"
+  },
+  "17616069": {
+    "participants": "women",
+    "interventions": "treatment",
+    "outcomes": "adverse events | effective"
+  }
+}
