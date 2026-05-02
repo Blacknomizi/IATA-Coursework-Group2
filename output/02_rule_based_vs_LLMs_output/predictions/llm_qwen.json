@@ -1,0 +1,252 @@
+{
+  "10070173": {
+    "participants": "'patients with SAR , who were symptomatic during the ragweed season , volunteered for enrolment ( 243 randomized",
+    "interventions": "'budesonide Turbuhaler , budesonide aqua'\n    Example 7: Text = '",
+    "outcomes": "'patients preferred the budesonide powder formulation delivered via Turbuhaler two to one over the aqua formulation'"
+  },
+  "10390665": {
+    "participants": "'children aged 4-10 years'\n    Example 5: Text = 'The effect of a 12",
+    "interventions": "'granisetron , perphenazine'\n    Example 7: Text = 'The aim of this study was to evaluate",
+    "outcomes": "'post-operative vomiting'\n    Example 4: Text = 'the incidence of postoperative nausea and vomiting in children undergoing general"
+  },
+  "10475150": {
+    "participants": "'patients with hypothyroidism'\n    Example 5: Text = 'The role of somatostatin ( oct",
+    "interventions": "'octreotide'\n    Example 7: Text = 'The role of somatostatin ( octreotide )",
+    "outcomes": "'melatonin secretion'\n    Example 4: Text = 'the role of somatostatin ( octreotide )"
+  },
+  "10578479": {
+    "participants": "'women on common hormone therapies , such as oral contraceptives ( OC )'\n    Example 5: Text = '",
+    "interventions": "'20 g of protein and 38 mg of total isoflavones to their usual diet for another two menstrual",
+    "outcomes": "'serum sex hormones'\n    Example 4: Text = 'The effects of soy intake on sex hormone metabolism in pre"
+  },
+  "10589810": {
+    "participants": "'subjects with known or suspected coronary artery disease'\n    Example 5: Text = 'The aim of this study was to",
+    "interventions": "'plastic curettes , conventional steel curettes'\n    Example 7: Text = 'OBJECTIVE To evaluate",
+    "outcomes": "'non-root substance removing curettes'\n    Example 4: Text = 'The aim of this study was to evaluate"
+  },
+  "10763172": {
+    "participants": "61\n    Example 5: Text = 'The aim of this study was to evaluate the efficacy and safety of the",
+    "interventions": "'Xylometazoline , Dexpanthenol , Xylometazoline-Dexpanthenol'\n    Example",
+    "outcomes": "'rhinitis'\n    Example 4: Text = 'The aim of this study was to evaluate the efficacy and safety"
+  },
+  "10764172": {
+    "participants": "'men \u2265 45 years'\n    Example 5: Text = 'The effects of intrathecal morphine on",
+    "interventions": "'intrathecal morphine'\n    Example 7: Text = 'The effects of intrathecal morphine on NK",
+    "outcomes": "'immune response'\n    Example 4: Text = 'The effects of intrathecal morphine on NK cell activity following"
+  },
+  "10912743": {
+    "participants": "'hypertensive patients'\n    Example 5: Text = 'The effects of low-dose aspirin on clinic and",
+    "interventions": "'aspirin , vitamin E , nonsteroidal antiinflammatory drugs , low-dose aspirin , aspirin ,",
+    "outcomes": "'clinics and ambulatory blood pressure'\n    Example 4: Text = 'the effects of low-dose aspirin"
+  },
+  "10934569": {
+    "participants": "'children with pervasive developmental disorder NOS'\n    Example 5: Text = 'The purpose of this study was to determine",
+    "interventions": "'intensive treatment or parent training'\n    Example 7: Text = 'The study was conducted in a single center ,",
+    "outcomes": "'intelligence'\n    Example 4: Text = 'the results of the study are consistent with the hypothesis that the use of"
+  },
+  "10940525": {
+    "participants": "'dogs and cats with naturally occurring flea infestations , some of which also had signs associated with FAD'\n    Example",
+    "interventions": "'selamectin , ivermectin , heartworms , fleas , heartworms , fleas",
+    "outcomes": "'flea infestations'\n    Example 4: Text = 'The results of the study are presented in Table"
+  },
+  "11099086": {
+    "participants": "'children ages 6 months to 10 years'\n    Example 5: Text = 'The purpose of this study",
+    "interventions": "'ciprofloxacin , ceftriaxone'\n    Example 7: Text = 'OBJECTIVE To",
+    "outcomes": "'the recurrence rate of tumors'\n    Example 4: Text = 'The results of the study are presented in Table"
+  },
+  "11229858": {
+    "participants": "'children with malaria'\n    Example 5: Text = 'The effect of the use of a new drug in the treatment",
+    "interventions": "'naproxen , metamizol , fever peaks , fever clearance , malaria , antipyretic drugs'\n    Example",
+    "outcomes": "'antipyretic treatment'\n    Example 4: Text = 'the results of the study are presented in the following"
+  },
+  "1131298": {
+    "participants": "'healthy subjects'\n    Example 5: Text = 'The effect of the essential oils of garlic and onion on alimentary",
+    "interventions": "'garlic , onion , garlic and onion , garlic and onion , garlic and onion , garlic and onion , garlic and onion",
+    "outcomes": "'alimentary hyperlipemia'\n    Example 4: Text = 'The effect of the essential oils of garlic and"
+  },
+  "11317090": {
+    "participants": "'adults from Washington State aged 55 to 75 with a doctor-confirmed diagnosis of osteoarthritis",
+    "interventions": "'aquatic exercise'\n    Example 7: Text = 'OBJECTIVE To evaluate the effectiveness of a 12-week",
+    "outcomes": "'aquatic exercise'\n    Example 4: Text = 'The effects of a 12-week aquatic exercise program on"
+  },
+  "11381289": {
+    "participants": "'patients at high risk for cardiovascular events'\n    Example 5: Text = 'The results of the HOPE trial were",
+    "interventions": "'vitamin E , ACE inhibitor therapy'\n    Example 7: Text = 'The results of the study are important because",
+    "outcomes": "'blood pressure'\n    Example 4: Text = 'The results of the study were published in the New England Journal of"
+  },
+  "11401641": {
+    "participants": "'patients with open angle glaucoma or ocular hypertension where IOP is not adequately controlled with timolol'",
+    "interventions": "'latanoprost , timolol , combined treatment'\n    Example 7: Text = 'The effect of a",
+    "outcomes": "'IOP reduction'\n    Example 4: Text = 'the effect of the combination of timolol and latan"
+  },
+  "11454878": {
+    "participants": "'patients with epithelial ovarian carcinoma that recurred after or did n't respond to first-line , platinum-based chemotherapy'",
+    "interventions": "'PLD , topotecan'\n    Example 7: Text = 'OBJECTIVE To evaluate the efficacy and safety of",
+    "outcomes": "'platinum-refractory subgroup'\n    Example 4: Text = 'the recurrence rate of tumors in 30"
+  },
+  "11495215": {
+    "participants": "'women who smoke and take oral contraceptives ( OCs )'\n    Example 5: Text = 'The purpose",
+    "interventions": "'chronic cigarette smoking , acute nicotine administration , and OC use'\n    Example 7: Text = 'The purpose of",
+    "outcomes": "'cardiovascular reactivity'\n    Example 4: Text = 'The results of this study indicate that the use of"
+  },
+  "11642083": {
+    "participants": "'patients with Q-MI'\n    Example 5: Text = 'The aim of this study was to evaluate the effect",
+    "interventions": "'neoton , streptokinase preparations , streptokinase preparations , TLT , TLT , TLT ,",
+    "outcomes": "'neoton'\n    Example 4: Text = 'the results of the study are presented in Table 1 . the"
+  },
+  "11737955": {
+    "participants": "'subjects with known or suspected coronary artery disease'\n    Example 5: Text = 'The effects of a 12",
+    "interventions": "'alpha-tocopherol , beta-carotene , antioxidant supplementation , exercise-induced oxidative stress'\n    Example 7:",
+    "outcomes": "'free radical products of antipyrine'\n    Example 4: Text = 'the effects of 12 weeks"
+  },
+  "11750293": {
+    "participants": "'patients with a history of recently diagnosed RA of less than 2 years'\n    Example 5: Text = 'The",
+    "interventions": "'depression , disability , pain , beliefs about the consequences of arthritis and coping strategies'\n    Example 7: Text =",
+    "outcomes": "'pain'\n    Example 4: Text = 'The course of depression in recent onset rheumatoid arthritis : the predictive"
+  },
+  "11829043": {
+    "participants": "'patients who had undergone stoma surgery'\n    Example 5: Text = 'The purpose of this study was to investigate",
+    "interventions": "'muscle relaxation training'\n    Example 7: Text = 'The purpose of this study was to evaluate the effect of",
+    "outcomes": "'state anxiety'\n    Example 4: Text = 'The results of the study are presented in Table 1 . The"
+  },
+  "11891832": {
+    "participants": "'patients with inclusion body myositis'\n    Example 5: Text = 'The effect of a 12-week",
+    "interventions": "'methotrexate , placebo'\n    Example 7: Text = 'The study was conducted in a double-blind ,",
+    "outcomes": "'muscle weakness'\n    Example 4: Text = 'the results of the study are presented in the following table ."
+  },
+  "12139812": {
+    "participants": "'patients with initial pterygium'\n    Example 5: Text = 'OBJECTIVE To investigate the effect of the combination",
+    "interventions": "'limbal epithelial autograft transplantation , pterygium excision'\n    Example 7: Text = 'OBJECT",
+    "outcomes": "'limbal epithelial autograft transplantation'\n    Example 4: Text = 'The results of the study are presented"
+  },
+  "12477021": {
+    "participants": "'patients with known or suspected coronary artery disease'\n    Example 5: Text = 'The aim of this study was to",
+    "interventions": "'goldmann applanation tonometer , goldmann applanation tonometer , goldmann applanation tonometer , goldmann ap",
+    "outcomes": "'clinical performance'\n    Example 4: Text = 'The aim of this study was to evaluate the accuracy of the Reich"
+  },
+  "12576806": {
+    "participants": "'patients with primary ureteropelvic junction obstruction'\n    Example 5: Text = 'The purpose of this study",
+    "interventions": "'2 weeks'\n    Example 7: Text = 'The aim of this study was to evaluate the effect of a",
+    "outcomes": "'functional restoration across the ureteropelvic junction'\n    Example 4: Text = 'the results of this study"
+  },
+  "12586799": {
+    "participants": "'patients with advanced NPC'\n    Example 5: Text = 'The purpose of this study was to evaluate the efficacy of",
+    "interventions": "'CCRT , RT , chemotherapy'\n    Example 7: Text = 'The study was conducted in the Department of Internal",
+    "outcomes": "'chemotherapy'\n    Example 4: Text = 'the recurrence rate of tumors in 308 patients after a"
+  },
+  "12595499": {
+    "participants": "'people at high cardiovascular risk'\n    Example 5: Text = 'The effect of a 12-week diet and",
+    "interventions": "'ramipril'\n    Example 7: Text = 'The study was conducted in 1999 and",
+    "outcomes": "'microalbuminuria'\n    Example 4: Text = 'the results of the HOPE randomized study . In people"
+  },
+  "12709693": {
+    "participants": "100\n    Example 5: Text = 'The purpose of this study was to evaluate the efficacy of a new",
+    "interventions": "'remifentanil , propofol , midazolam , fentanyl , propofol , total intr",
+    "outcomes": "'analgesia/sedation'\n    Example 4: Text = 'The results of this study indicate that the use"
+  },
+  "1286547": {
+    "participants": "'IDDM patients with borderline hypertension'\n    Example 5: Text = 'The effect of nitrendipine on plate",
+    "interventions": "'nitrendipine'\n    Example 7: Text = 'OBJECTIVE To evaluate the effect of a 12",
+    "outcomes": "'platelet activation'\n    Example 4: Text = 'the effect of nitrendipine on platelet aggregation in"
+  },
+  "12960652": {
+    "participants": "'patients with gastrointestinal diseases'\n    Example 5: Text = 'The aim of this study was to investigate the effect of",
+    "interventions": "'epigastric impedance , gastric dysrhythmia , gastrointestinal symptoms , myoelectrical dysrhythmia ,",
+    "outcomes": "'electrical control activity'\n    Example 4: Text = 'The results of the study are presented in Table 1"
+  },
+  "1459268": {
+    "participants": "'patients undergoing IVF'\n    Example 5: Text = 'The effect of the use of a new drug on the",
+    "interventions": "'GnRH-a , ovulation induction , fertilization , and pregnancy rates'\n    Example 7: Text = '",
+    "outcomes": "'fertilization , pregnancy rates'\n    Example 4: Text = 'the results of the study are presented in Table"
+  },
+  "14679127": {
+    "participants": "'patients with advanced epithelial ovarian cancer'\n    Example 5: Text = 'The effect of a 12-week",
+    "interventions": "'topotecan , paclitaxel'\n    Example 7: Text = 'The study was conducted in a",
+    "outcomes": "'non-haematological toxicity'\n    Example 4: Text = 'the results of the study are presented in Table"
+  },
+  "14739125": {
+    "participants": "'men \u2265 45 years'\n    Example 5: Text = 'The effects of the cholesteryl ester",
+    "interventions": "'torcetrapib'\n    Example 7: Text = 'OBJECTIVE To evaluate the efficacy of a novel oral",
+    "outcomes": "'apoB'\n    Example 4: Text = 'the effect of the cholesteryl ester transfer protein inhibitor tor"
+  },
+  "14763035": {
+    "participants": "'CAPD patients with LVH'\n    Example 5: Text = 'The aim of this study was to investigate the",
+    "interventions": "'Valsartan , placebo'\n    Example 7: Text = 'The aim of this study was to evaluate the effect",
+    "outcomes": "'LVH'\n    Example 4: Text = 'The results of this study indicate that the use of a selective ang"
+  },
+  "15014018": {
+    "participants": "'patients with stage IIB and III melanoma'\n    Example 5: Text = 'The purpose of this study was",
+    "interventions": "'high-dose interferon'\n    Example 7: Text = 'The purpose of this study was to determine the effect",
+    "outcomes": "'relapse'\n    Example 4: Text = 'the results of the study are presented in the following table . The"
+  },
+  "15133359": {
+    "participants": "34\n    Example 5: Text = 'The aim of this study was to evaluate the effect of a new technique",
+    "interventions": "'electrophysiology catheter aided positioning strategy , GCA , EPA'\n    Example 7: Text = 'OBJECT",
+    "outcomes": "'fluoroscopy time'\n    Example 4: Text = 'The use of a new technique for the placement of"
+  },
+  "15193668": {
+    "participants": "'third- and fourth-graders'\n    Example 5: Text = 'The purpose of this study was to examine the",
+    "interventions": "'AUT-D , AUT-D + E'\n    Example 7: Text = 'The purpose of this study was to examine",
+    "outcomes": "'behavioral intentions'\n    Example 4: Text = 'The results of this study suggest that the use of a combination"
+  },
+  "15358868": {
+    "participants": "'adults with autism'\n    Example 5: Text = 'The present study investigated the effects of a 12",
+    "interventions": "'adults with autism , superior visual discrimination ability , stimulus processing disturbances'\n    Example 7: Text = 'The purpose",
+    "outcomes": "'stimulus processing disturbances'\n    Example 4: Text = 'the results of this study suggest that the use of a"
+  },
+  "15848261": {
+    "participants": "'patients with left hemiplegia'\n    Example 5: Text = 'The purpose of this study was to investigate",
+    "interventions": "'biofeedback , forceplate system training , anticipation equilibrium , conventional therapy , rehabilitation unit'\n    Example 7: Text =",
+    "outcomes": "'spasticity'\n    Example 4: Text = 'The results of the study are presented in Table 1 ."
+  },
+  "15854186": {
+    "participants": "'patients with known or suspected coronary artery disease'\n    Example 5: Text = 'The effect of a 12",
+    "interventions": "'cophenylcaine spray vs. placebo in flexible nasendoscopy : a prospective double-blind randomised controlled",
+    "outcomes": "'pain and unpleasantness of taste and overall discomfort experienced'\n    Example 4: Text = 'the results of this study"
+  },
+  "15858959": {
+    "participants": "'children with acute diarrhoea'\n    Example 5: Text = 'The effect of the combination of metformin",
+    "interventions": "'S. boulardii'\n    Example 7: Text = 'OBJECTIVE To evaluate the effect of a",
+    "outcomes": "'duration of hospital stay'\n    Example 4: Text = 'the effect of the combination of metformin and met"
+  },
+  "16167234": {
+    "participants": "'patients who underwent digestive surgery'\n    Example 5: Text = 'OBJECTIVE To investigate the effect of a combination of",
+    "interventions": "'nutritional status , postoperative fatigue , digestive surgery , branch chain amino acid enriched formula'\n    Example 7: Text",
+    "outcomes": "'postoperative fatigue score'\n    Example 4: Text = 'The results of this study indicate that the use of a"
+  },
+  "16295154": {
+    "participants": "'parents of children who receive the diagnosis of autistic spectrum disorder ( ASD )'\n    Example 5: Text = 'The",
+    "interventions": "'usual care plus 3 hours contact with a pediatric nurse practitioner for counseling , instruction , and assistance with implementation of the recommended",
+    "outcomes": "'parents'\n    Example 4: Text = 'The purpose of this study was to determine the effectiveness of a 1"
+  },
+  "16427787": {
+    "participants": "'subjects with known or suspected coronary artery disease'\n    Example 5: Text = 'The effects of the antihyp",
+    "interventions": "'melatonin , but not placebo , reduced task-related activity in the rostro-medial aspect of the occipital cortex",
+    "outcomes": "'sleep'\n    Example 4: Text = 'the effects of melatonin on brain activities and their relation to induction of"
+  },
+  "16505427": {
+    "participants": "'patients with cancer'\n    Example 5: Text = 'The purpose of this study was to determine the effect of a",
+    "interventions": "'40,000 U , 120,000 U'\n    Example 7: Text",
+    "outcomes": "'hemoglobin'\n    Example 4: Text = 'the results of the study are presented in Table 1 . The"
+  },
+  "1669598": {
+    "participants": "'patients with asthma due to HDM'\n    Example 5: Text = 'The aim of this study was to evaluate",
+    "interventions": "'DSCG , LI , PI , HDM , asthma , HDM , asthma , asthma , asthma , asthma ,",
+    "outcomes": "'local immunotherapy by inhalation of a powder extract in asthma due to house dust mite Dermatophagoides"
+  },
+  "17293018": {
+    "participants": "'patients with CDAD'\n    Example 5: Text = 'The effect of a 12-week dietary intervention on",
+    "interventions": "'whey protein concentrate'\n    Example 7: Text = 'The safety of whey protein concentrate derived from the milk",
+    "outcomes": "'the recurrence rate of tumors'\n    Example 4: Text = 'The safety of whey protein concentrate derived from the"
+  },
+  "17321989": {
+    "participants": "'patients with acute myeloid leukemia or myelodysplastic syndromes'\n    Example 5: Text",
+    "interventions": "'itraconazole , fluconazole'\n    Example 7: Text = 'The efficacy of the combination of 5",
+    "outcomes": "'systemic fungal infection'\n    Example 4: Text = 'the incidence of systemic fungal infections in patients with acute my"
+  },
+  "17616069": {
+    "participants": "50\n    Example 5: Text = 'The aim of this study was to evaluate the effect of a new oral",
+    "interventions": "'trivalent ferrum preparation'\n    Example 7: Text = 'OBJECTIVE To evaluate the effectivity of a new",
+    "outcomes": "'trivalent ferrum preparation'\n    Example 4: Text = 'the results of the study are presented in Table"
+  }
+}
