@@ -148,5 +148,105 @@
     "participants": "patients with IDDM-type diabetes mellitus",
     "interventions": "nitrendipine",
     "outcomes": "reduced platelet thromboxane formation"
+  },
+  "12960652": {
+    "participants": "infants",
+    "interventions": "Epigastric impedance",
+    "outcomes": "dysrhythmia in infants with gastrointestinal diseases"
+  },
+  "1459268": {
+    "participants": "Aberdeen Assisted Reproduction Unit",
+    "interventions": "short and ultrashort regimens of gonadotropin-releasing hormone agonist",
+    "outcomes": "ovulation induction in an in vitro fertilization program"
+  },
+  "14679127": {
+    "participants": "Patients with bidimensionally measurable",
+    "interventions": "topotecan versus paclitaxel",
+    "outcomes": "Long-term survival"
+  },
+  "14739125": {
+    "participants": "healthy young subjects",
+    "interventions": "torcetrapib",
+    "outcomes": "HDL-C levels"
+  },
+  "14763035": {
+    "participants": "24 CAPD patients with LVH",
+    "interventions": "selective angiotensin receptor blocker",
+    "outcomes": "LVH [ left ventricular ma]"
+  },
+  "15014018": {
+    "participants": "patients with stage IIB and III melanoma",
+    "interventions": "high-dose IFN-alpha 2b therapy",
+    "outcomes": "adjuvant high-dose IFN-alpha 2b therapy"
+  },
+  "15133359": {
+    "participants": "a biomedical information extraction assistant",
+    "interventions": "CS cannulation",
+    "outcomes": "CS cannulation"
+  },
+  "15193668": {
+    "participants": "children",
+    "interventions": "AUT-D",
+    "outcomes": "behavioral intentions toward an unfamiliar child with autism"
+  },
+  "15358868": {
+    "participants": "adults with autism",
+    "interventions": "autism",
+    "outcomes": "visual search in adults with autism"
+  },
+  "15848261": {
+    "participants": "Twenty-six patients",
+    "interventions": "physical therapy alone or with a specialised balance retraining program",
+    "outcomes": "gait improvement"
+  },
+  "15854186": {
+    "participants": "98 patients",
+    "interventions": "cophenylcaine or placebo",
+    "outcomes": "pain , unpleasantness of taste and overa"
+  },
+  "15858959": {
+    "participants": "Two hundred children",
+    "interventions": "Saccharomyces boulardii",
+    "outcomes": "Effect of Saccharomyces boulardii in children with acute diarrhoea"
+  },
+  "16167234": {
+    "participants": "patients who underwent digestive surgery",
+    "interventions": "BCAA enriched or rou",
+    "outcomes": "nutritional status and postoperative fatigue"
+  },
+  "16295154": {
+    "participants": "parents of children",
+    "interventions": "intervention pilot",
+    "outcomes": "outcomes or endpoints were measured"
+  },
+  "16427787": {
+    "participants": "placebo controlled fMRI study",
+    "interventions": "melatonin",
+    "outcomes": "melatonin reduced task-related activit"
+  },
+  "16505427": {
+    "participants": "Eligible patients",
+    "interventions": "erythropoietin alfa",
+    "outcomes": "Eligible patients were randomly assigned to receive three weekly doses of epoetin alfa 40,000 U subcutaneously, followed by either standard weekly epo"
+  },
+  "1669598": {
+    "participants": "10 patients",
+    "interventions": "local immunotherapy",
+    "outcomes": "efficacy and tolerability"
+  },
+  "17293018": {
+    "participants": "patients with CDAD",
+    "interventions": "dietary management of patients with C. difficile-associated diarrhea",
+    "outcomes": "safety of whey protein concentrate derived from the milk"
+  },
+  "17321989": {
+    "participants": "patients with acute myeloid leukemia",
+    "interventions": "itraconazole capsules and fluconazole capsules",
+    "outcomes": "Prophylactic effect of itraconazole capsules and fluconazole capsules"
+  },
+  "17616069": {
+    "participants": "pospartal anemia",
+    "interventions": "intravenous treatment",
+    "outcomes": "effectivity and safety"
   }
 }

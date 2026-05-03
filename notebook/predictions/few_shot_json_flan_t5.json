@@ -148,5 +148,105 @@
     "participants": "IDDM-type diabetes mellitus",
     "interventions": "dihydropyridine calcium channel blocker",
     "outcomes": "platelet thromboxane formation"
+  },
+  "12960652": {
+    "participants": "infants",
+    "interventions": "Gastric dysrhythmia",
+    "outcomes": "Gastric dysrhythmia"
+  },
+  "1459268": {
+    "participants": "patients",
+    "interventions": "gonadotropin-releasing hormone agonist",
+    "outcomes": "not specified"
+  },
+  "14679127": {
+    "participants": "patients with advanced epithelial ovarian cancer",
+    "interventions": "topotecan versus paclitaxel",
+    "outcomes": "Long-term survival"
+  },
+  "14739125": {
+    "participants": "humans",
+    "interventions": "torcetrapib",
+    "outcomes": "high-density lipoprotein"
+  },
+  "14763035": {
+    "participants": "patients",
+    "interventions": "Valsartan",
+    "outcomes": "LVH"
+  },
+  "15014018": {
+    "participants": "melanoma",
+    "interventions": "adjuvant high-dose interferon",
+    "outcomes": "adjuvant high-dose interferon"
+  },
+  "15133359": {
+    "participants": "text>",
+    "interventions": "CS cannulation",
+    "outcomes": "not specified"
+  },
+  "15193668": {
+    "participants": "children",
+    "interventions": "descriptive and explanatory information",
+    "outcomes": "perceptions and behavioral intentions toward an unfamiliar child with autism"
+  },
+  "15358868": {
+    "participants": "adults with autism",
+    "interventions": "visual discrimination ability",
+    "outcomes": "visual search in adults with autism"
+  },
+  "15848261": {
+    "participants": "Twenty-six patients within 3 months of onset of stroke",
+    "interventions": "specialised balance retraining program",
+    "outcomes": "gait improvement"
+  },
+  "15854186": {
+    "participants": "98 patients",
+    "interventions": "cophenylcaine or placebo nasal spray",
+    "outcomes": "Cophenylcaine spray versus placebo in flexible nasendoscopy"
+  },
+  "15858959": {
+    "participants": "children",
+    "interventions": "probiotic agents",
+    "outcomes": "Effects of Saccharomyces boulardii"
+  },
+  "16167234": {
+    "participants": "patients who underwent digestive surgery",
+    "interventions": "branch chain amino acid enriched formula",
+    "outcomes": "Nutrition status and postoperative fatigue"
+  },
+  "16295154": {
+    "participants": "parents of children",
+    "interventions": "intervention pilot",
+    "outcomes": "not specified"
+  },
+  "16427787": {
+    "participants": "placebo controlled functional ma",
+    "interventions": "Melatonin",
+    "outcomes": "Effects of melatonin on brain activities"
+  },
+  "16505427": {
+    "participants": "patients with cancer",
+    "interventions": "erythropoietin",
+    "outcomes": "erythropoietin alfa"
+  },
+  "1669598": {
+    "participants": "asthma",
+    "interventions": "local immunotherapy by inhalation of a powder extract",
+    "outcomes": "text>"
+  },
+  "17293018": {
+    "participants": "Clostridium difficile",
+    "interventions": "whey protein concentrate",
+    "outcomes": "not specified"
+  },
+  "17321989": {
+    "participants": "Japanese",
+    "interventions": "fluconazole capsules",
+    "outcomes": "Prophylactic effect of itraconazole capsules and fluconazole capsules for systemic fungal infections"
+  },
+  "17616069": {
+    "participants": "pospartal anemia",
+    "interventions": "intravenous treatment of postpartum anemia with trivalent ferrum preparation",
+    "outcomes": "effectivity and safety"
   }
 }
