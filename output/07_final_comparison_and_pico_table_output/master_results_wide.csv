@@ -1,0 +1,10 @@
+approach,interventions,outcomes,participants
+crf_predictions,0.514,0.563,0.301
+e2e_biobert_predictions,0.778,0.73,0.512
+few_shot_flan_t5,0.444,0.153,0.37
+few_shot_json_flan_t5,0.417,0.123,0.319
+finetuned_distilbert,0.691,0.754,0.497
+gazetteer,0.203,0.238,0.153
+llm_qwen,0.315,0.154,0.314
+rule_based,0.083,0.106,0.262
+zero_shot_flan_t5,0.434,0.215,0.392
