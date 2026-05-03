@@ -116,35 +116,29 @@ Weixuan Gu, Zonjin Han, Saisha Hiray, Sanya Kapoor, Chris Luckhurst, Disen Zhu
 
 \subsection{Preliminary Clustering Analysis}
 
-A preliminary clustering analysis was conducted to assess whether sentence embeddings exhibit natural grouping structures related to participant, intervention, and outcome fields. This stage was exploratory, aiming to evaluate whether such fields are separable in embedding space and whether this structure can inform pipeline design.
+This preliminary clustering analysis aimed to investigate whether sentence embeddings exhibit natural groupings across participant, intervention, and outcome fields. The purpose of this stage was to evaluate whether such fields are separable in embedding space and whether this structure can inform pipeline design.
 
 \subsubsection{Data Preparation and Label Construction}
 
-Token-level annotations from EBM-NLP were converted into flat BIO tags (“O”, “B”, “I”). Tokens were grouped into sentences using punctuation-based segmentation (``.'', ``!'', ``?'') while preserving alignment with annotations.
+Token-level annotations from EBM-NLP were converted into flat BIO tags (“O”, “B”, “I”), following the preprocessing steps suggested in the Task 2 course notebook~\cite{uob_task2_notebook}. Tokens were grouped into sentences using punctuation-based segmentation (``.'', ``!'', ``?''), while preserving the original annotations.
 
-Sentence-level labels were heuristically derived: a sentence was labelled as field-related if it contained a minimum number of positive BIO tokens, otherwise as “other”. This produced three binary datasets (participants, interventions, outcomes vs other). These labels are approximate, as sentences may contain multiple fields.
+Sentence-level labels were heuristically derived: a sentence was labelled as field-related if it contained a minimum number of positive BIO tokens, otherwise as “other”. This produced three binary datasets: participants vs others, interventions vs others, and outcomes vs others. These labels are approximate, as sentences may contain multiple fields.
 
 \subsubsection{Sentence Embeddings}
 
-Sentences were encoded using the pretrained sentence-transformer model \texttt{all-MiniLM-L6-v2}~\cite{reimers-2019-sentence-bert} to obtain dense embeddings.
+Sentences were encoded using the pretrained sentence-transformer model \texttt{all-MiniLM-L6-v2}~\cite{reimers-2019-sentence-bert} to obtain sentence embeddings.
 
 \subsubsection{Clustering and Evaluation}
 
-Two unsupervised methods were applied: K-means (with $k=2$–$5$ for binary tasks and $k=3$ for P/I/O) and hierarchical agglomerative clustering (HAC). Cluster quality was evaluated in two complementary ways: geometrically, using silhouette scores for K-means solutions, and semantically, by comparing cluster assignments with sentence-level labels using the proportion of field-related sentences within each cluster.
+Two unsupervised methods were applied: K-means clustering ($k = 2$--$5$ for the binary tasks and $k = 3$ for the P/I/O task) and hierarchical agglomerative clustering (HAC). Clustering quality was evaluated geometrically using silhouette scores and semantically by examining the correspondence between cluster compositions and sentence-level labels. For the mixed P/I/O setting, additional cluster--label alignment metrics (ARI, NMI, and Purity) were also calculated, and silhouette sweeps were performed across multiple values of $k$.
 
 \subsubsection{Visualisation}
 
-Embeddings were projected to two dimensions using PCA. For each experiment, embeddings were visualised using two views: coloured by gold labels and by cluster assignments, to assess separability and clustering structure.
+The embeddings were projected into two-dimensional space using principal component analysis (PCA) and visualised using both gold labels and cluster assignments.
 
 \subsubsection{Combined P/I/O Analysis}
 
-A supplementary P/I/O analysis assigned each sentence to the field with the highest BIO token count, with ties labelled as mixed and empty cases as other. Mixed and other were excluded for three-way clustering, focusing on dominant field assignments. This experiment evaluated whether multiple fields can be jointly recovered from embedding structure.
-
-
-
-
-
-
+A supplementary P/I/O analysis assigned each sentence to the field with the highest BIO token count, with ties labelled as \textit{mixed} and empty cases as \textit{other}. Mixed and other were excluded for three-way clustering, focusing on dominant field assignments.
 
 \section{Experimental Evaluation}
 
@@ -152,7 +146,7 @@ A supplementary P/I/O analysis assigned each sentence to the field with the high
 
 \paragraph{Participants vs Other}
 
-Participant-related clustering showed weak correspondence between clusters and labels. In K-means ($k=2$–$5$), participant proportions remained low and similar across clusters (typically $\sim$15\%–21\%, with a maximum of 28.7\%), indicating no participant-dominant cluster. The corresponding silhouette scores were also consistently low, decreasing from 0.0290 at $k=2$ to 0.0235 at $k=5$, suggesting that the geometric separation of these clusters was weak. HAC produced a comparable pattern.
+Participant-related clustering showed weak correspondence between clusters and labels. In K-means ($k = 2$--$5$), participant proportions remained low and similar across clusters, typically around 15\%--21\%, with a maximum of 28.7\%, indicating no participant-dominant cluster. HAC showed a comparable pattern.
 
 \begin{figure}[htbp]
     \centering
@@ -160,12 +154,13 @@ Participant-related clustering showed weak correspondence between clusters and l
     \caption{PCA projection for participant-related sentences.}
     \label{fig:participants_pca}
 \end{figure}
+\FloatBarrier
 
-As shown in Figure~\ref{fig:participants_pca}, participant and other sentences overlap extensively. Although clustering partitions the space geometrically, these regions do not align with participant labels, indicating weak separability.
+The PCA visualization showed an extensive overlap between the participant and the other sentences, indicating weak separability.
 
 \paragraph{Interventions vs Other}
 
-Intervention-related clustering showed clearer structure. K-means identified clusters with substantially higher intervention proportions (up to $\sim$45\%), compared to $\sim$18\%–22\% in less enriched clusters. However, silhouette scores remained low across all tested values of $k$ (from 0.0291 at $k=2$ to 0.0225 at $k=5$), indicating that even these relatively more informative clusters were not strongly separated geometrically. HAC showed a similar contrast (36.6\% vs 18.7\%), suggesting consistent local enrichment.
+Intervention-related clustering showed clearer structure. K-means identified clusters with substantially higher intervention proportions, up to about 45\%, compared with about 18\%--22\% in less enriched clusters. HAC showed a similar contrast, with 36.6\% versus 18.7\% intervention-labelled sentences across clusters, suggesting consistent local enrichment.
 
 \begin{figure}[htbp]
     \centering
@@ -174,11 +169,11 @@ Intervention-related clustering showed clearer structure. K-means identified clu
     \label{fig:interventions_pca}
 \end{figure}
 
-Despite substantial overlap in PCA space (Figure~\ref{fig:interventions_pca}), intervention-related sentences are less uniformly distributed and form more concentrated regions than participants, indicating stronger but incomplete separability.
+Despite overlap in PCA space, intervention-related sentences were less uniformly distributed than participant-related sentences, indicating stronger but still incomplete separability.
 
 \paragraph{Outcomes vs Other}
 
-Outcome-related clustering exhibited the strongest signal. K-means produced clusters with up to $\sim$52\% outcome-labelled sentences, indicating local dominance. Nevertheless, silhouette scores again remained low, ranging from 0.0289 at $k=2$ to 0.0225 at $k=5$, which suggests that the overall geometric clustering structure was still weak despite stronger local outcome enrichment. HAC showed consistent but smaller differences (39.9\% vs 35.5\%).
+Outcome-related clustering exhibited the strongest signal. K-means produced clusters with up to about 52\% outcome-labelled sentences, indicating local dominance. HAC showed smaller but consistent differences, with 39.9\% versus 35.5\%.
 
 \begin{figure}[htbp]
     \centering
@@ -187,11 +182,11 @@ Outcome-related clustering exhibited the strongest signal. K-means produced clus
     \label{fig:outcomes_pca}
 \end{figure}
 
-Although PCA still shows substantial overlap (Figure~\ref{fig:outcomes_pca}), outcome-related content contributes more strongly to embedding structure than participants and, in some cases, interventions.
+Although PCA still showed substantial overlap, outcome-related content contributed more strongly to embedding structure than participants and, in some cases, interventions.
 
 \subsubsection{Combined P/I/O Analysis}
 
-Before filtering, the mixed class accounted for $\sim$3.2\% of sentences. After excluding mixed and other, clustering was performed on dominant P/I/O labels.
+Before filtering, the mixed class accounted for about 3.2\% of sentences. After excluding mixed and other, clustering was performed on dominant P/I/O labels.
 
 \begin{figure}[htbp]
     \centering
@@ -200,19 +195,21 @@ Before filtering, the mixed class accounted for $\sim$3.2\% of sentences. After 
     \label{fig:pio_pca}
 \end{figure}
 
-K-means ($k=3$) produced visually distinct clusters in PCA space; however, cluster compositions remained mixed, with outcomes dominating all clusters ($\sim$47\%–58\%) and participants consistently the smallest class. HAC showed similar distributions. The silhouette score for the three-way K-means solution was only 0.0269, indicating weak overall geometric separation despite the apparent partitioning in PCA space. As illustrated in Figure~\ref{fig:pio_pca}, the embedding space contains stable geometric structure, but this structure does not align cleanly with schema fields.
+K-means ($k = 3$) produced visually distinct clusters in PCA space, but cluster compositions remained mixed, with outcomes dominating all clusters (about 47\%--58\%) and participants consistently the smallest class. HAC showed a similar pattern. The silhouette score for the three-way K-means solution was only 0.0269, reflecting weak overall geometric separation.
+
+Cluster--label alignment metrics further confirmed this weak correspondence. For joint P/I/O K-means clustering, ARI was 0.012, NMI was 0.007, and Purity was 0.516. HAC produced similarly weak alignment (ARI = 0.005, NMI = 0.004, Purity = 0.527). A silhouette sweep across $k = 2$ to $8$ showed the highest value at $k = 2$ (0.031), with lower values from $k = 3$ onward, around 0.023--0.027. Thus, $k = 3$ remained an interpretable choice aligned with the three schema fields, but not because the embedding space naturally supported a strong three-cluster separation.
 
 \subsubsection{Overall Interpretation}
 
-Across all experiments, sentence embeddings exhibit some geometric structure, but this structure only weakly corresponds to schema fields. This is also reflected in the consistently low silhouette scores across K-means settings, which remained around 0.02--0.03 for all three binary comparisons. Participants show minimal clustering signal, while interventions and outcomes exhibit stronger local enrichment, though none form clean, field-specific clusters.
+Across all experiments, sentence embeddings exhibited spatial structure, but the correspondence between this structure and the schema fields was weak. Participants showed the weakest clustering signal, while interventions and outcomes showed stronger local enrichment, although none formed clear, field-specific clusters.
 
-The combined P/I/O analysis further confirms that embedding geometry does not map cleanly to schema categories. In other words, the three-way clustering essentially failed to cleanly separate participants, interventions, and outcomes. These findings suggest that unsupervised clustering alone is insufficient for schema extraction, motivating the use of explicit extraction pipelines. 
+The combined P/I/O analysis also confirmed that embedding geometry does not map cleanly onto schema categories. In other words, the three-way clustering failed to separate participants, interventions, and outcomes in a meaningful way. These results show that unsupervised clustering alone is insufficient for schema extraction, motivating the use of explicit extraction pipelines.
 
 \subsubsection{Limitations}
 
 This analysis has several limitations. Sentence-level labels were heuristically derived from token-level annotations, and sentences may contain multiple fields, introducing noise. In addition, PCA provides only a low-dimensional approximation of the embedding space.
 
-Despite these limitations, the clustering results provide a useful empirical basis for subsequent pipeline design.
+Although there are limitations, the results still provide useful guidance for subsequent pipeline design.
 
 \section{Conclusions}
 
