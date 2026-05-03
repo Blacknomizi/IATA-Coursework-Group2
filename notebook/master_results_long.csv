@@ -12,7 +12,7 @@ few_shot_json_flan_t5,participants,0.493,0.146,0.193,0.6
 few_shot_json_flan_t5,interventions,0.446,0.243,0.282,0.6
 few_shot_json_flan_t5,outcomes,0.237,0.054,0.084,0.6
 finetuned_distilbert,participants,0.855,0.382,0.497,0.92
-finetuned_distilbert,interventions,0.642,0.824,0.676,0.96
+finetuned_distilbert,interventions,0.663,0.832,0.69,0.98
 finetuned_distilbert,outcomes,0.81,0.734,0.745,1.0
 gazetteer,participants,0.285,0.117,0.153,0.94
 gazetteer,interventions,0.317,0.208,0.203,0.86
