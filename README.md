@@ -17,7 +17,7 @@ Disen Zhu        (2560315)
 
 Saisha Hiray     (2822967)
 
-Chris Luckhurst
+Chris Luckhurst   (2832364)
 
 Sanya Kapoor     (2696783)
 
