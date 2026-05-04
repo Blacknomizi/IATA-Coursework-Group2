@@ -30,10 +30,9 @@ Saisha Hiray (2822967)
 IATA-Coursework-Group2/
 │
 ├── Final Report 
-├── dataset/                     # Dataset files and preprocessing resources
-├── notebook/                    # Experimental notebooks
-├── Report_ACL_Style/            # Final ACL-style report files
-├── Report_Pending_merger/       # Draft report sections
+├──notebook/                    # Experimental notebooks
+├──output/                      # Results of all notebboks
+├──src
 ├── README.md
 ```
 # Dataset
