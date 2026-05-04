@@ -29,10 +29,11 @@ Zongjin Han      (2764620)
 ```text
 IATA-Coursework-Group2/
 │
-├── Final Report 
+├── Final Report
+├──Report_ACL_Style /          # Latex files
 ├──notebook/                    # Experimental notebooks
 ├──output/                      # Results of all notebboks
-├──src
+├──src/   
 ├── README.md
 ```
 # Dataset
