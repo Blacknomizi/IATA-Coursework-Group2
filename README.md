@@ -13,9 +13,9 @@ The coursework explores multiple extraction aproaches which include clustering, 
 # Contributors: 
 Weixuan Gu （2816084）
 
-Zongjin Han
+Zongjin Han (2764620)
 
-Disen Zhu
+Disen Zhu (2560315)
 
 Chris Luckhurst
 
