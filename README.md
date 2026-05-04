@@ -11,7 +11,7 @@ The project investigates how different NLP and AI approaches can extract structu
 The coursework explores multiple extraction aproaches which include clustering, rule-based systems, prompting strategies, transformer fine-tuning, decomposed QA pipelines and end-to-end extraction systems.
 
 # Contributors: 
-Weixuan Gu
+Weixuan Gu （2816084）
 
 Zongjin Han
 
